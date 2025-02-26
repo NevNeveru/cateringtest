@@ -3,83 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catering Services</title>
+    <title>Delicious Catering Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <h1>Delicious Catering Services</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <a class="navbar-brand" href="#">Delicious Catering</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>Welcome to Delicious Catering</h2>
-            <p>We provide the best catering services for all your events.</p>
-            <a href="#contact" class="btn">Get a Quote</a>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are a team of professional chefs dedicated to making your events memorable with our delicious food and excellent service.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4">Delicious Catering Services</h1>
+            <p class="lead">We make your events unforgettable with our exquisite cuisine.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Book Now</a>
         </div>
     </section>
 
-    <section id="menu" class="menu">
+    <!-- About Section -->
+    <section id="about" class="py-5">
         <div class="container">
-            <h2>Our Menu</h2>
-            <div class="menu-items">
-                <div class="menu-item">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center">We are a team of passionate chefs dedicated to delivering the finest catering services for weddings, corporate events, and private parties.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Menu</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
                     <h3>Appetizers</h3>
-                    <p>Selection of fresh and tasty appetizers.</p>
+                    <p>Fresh and flavorful starters to kick off your event.</p>
                 </div>
-                <div class="menu-item">
+                <div class="col-md-4 text-center">
                     <h3>Main Courses</h3>
-                    <p>Delicious main courses to satisfy your hunger.</p>
+                    <p>Gourmet dishes crafted to perfection.</p>
                 </div>
-                <div class="menu-item">
+                <div class="col-md-4 text-center">
                     <h3>Desserts</h3>
-                    <p>Sweet treats to end your meal on a high note.</p>
+                    <p>Sweet treats to delight your guests.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <h2 class="text-center mb-4">Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/300" alt="Food 1" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/300" alt="Food 2" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/300" alt="Food 3" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <blockquote class="blockquote">
+                        <p>"The food was absolutely amazing! Everyone loved it."</p>
+                        <footer class="blockquote-footer">Jane Doe</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 text-center">
+                    <blockquote class="blockquote">
+                        <p>"Professional service and delicious food. Highly recommend!"</p>
+                        <footer class="blockquote-footer">John Smith</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 text-center">
+                    <blockquote class="blockquote">
+                        <p>"Best catering service we've ever had. Thank you!"</p>
+                        <footer class="blockquote-footer">Emily Brown</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form id="contact-form" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p>&copy; 2023 Delicious Catering Services. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
