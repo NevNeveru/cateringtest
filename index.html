@@ -6,6 +6,9 @@
     <title>Delicious Catering Services</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -41,8 +44,15 @@
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">About Us</h2>
-            <p class="text-center">We are a team of passionate chefs dedicated to delivering the finest catering services for weddings, corporate events, and private parties.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="About Us" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">About Us</h2>
+                    <p>We are a team of passionate chefs dedicated to delivering the finest catering services for weddings, corporate events, and private parties. Our mission is to create unforgettable culinary experiences for your special occasions.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -52,14 +62,17 @@
             <h2 class="text-center mb-4">Our Menu</h2>
             <div class="row">
                 <div class="col-md-4 text-center mb-4">
+                    <img src="https://via.placeholder.com/300x200" alt="Appetizers" class="img-fluid rounded mb-3">
                     <h3>Appetizers</h3>
                     <p>Fresh and flavorful starters to kick off your event.</p>
                 </div>
                 <div class="col-md-4 text-center mb-4">
+                    <img src="https://via.placeholder.com/300x200" alt="Main Courses" class="img-fluid rounded mb-3">
                     <h3>Main Courses</h3>
                     <p>Gourmet dishes crafted to perfection.</p>
                 </div>
                 <div class="col-md-4 text-center mb-4">
+                    <img src="https://via.placeholder.com/300x200" alt="Desserts" class="img-fluid rounded mb-3">
                     <h3>Desserts</h3>
                     <p>Sweet treats to delight your guests.</p>
                 </div>
@@ -71,26 +84,16 @@
     <section id="gallery" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Gallery</h2>
-            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Food 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Food 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Food 3">
-                    </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery 1" class="img-fluid rounded">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery 2" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery 3" class="img-fluid rounded">
+                </div>
             </div>
         </div>
     </section>
